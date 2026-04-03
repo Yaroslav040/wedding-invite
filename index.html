@@ -1,0 +1,250 @@
+﻿<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Весільне запрошення Eugen & Anastasia - 21 серпня 2026" />
+  <title>Eugen & Anastasia | Wedding Invitation</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600&family=Playfair+Display:wght@400;500;700&display=swap"
+    rel="stylesheet" />
+
+  <!-- AOS Animation Library -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css" />
+
+  <link rel="stylesheet" href="style.css" />
+
+</head>
+
+<body>
+  <div class="invitation-badge" id="invitationBadge" aria-live="polite"></div>
+
+  <header class="hero" id="top">
+    <div class="hero-overlay"></div>
+    <div class="hero-content" data-aos="zoom-in" data-aos-duration="1300">
+      <p class="hero-kicker">Wedding Invitation</p>
+      <h1>Eugen &amp; Anastasia</h1>
+      <p class="hero-date">21 серпня 2026</p>
+      <a class="hero-link" href="#intro">Деталі події</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="section intro" id="intro">
+      <div class="container" data-aos="fade-up">
+        <h2>Дорогі рідні та друзі!</h2>
+        <p>
+          Будемо щасливі розділити з вами наш особливий день -<br />
+          день, коли ми скажемо одне одному «так»<br />
+          і створимо нашу сім'ю.<br />
+          Чекаємо вас:
+        </p>
+      </div>
+    </section>
+
+    <section class="section calendar-section" id="calendar">
+      <div class="container">
+        <h2 data-aos="fade-up">Календар події</h2>
+        <div class="calendar-card" data-aos="zoom-in" data-aos-delay="120">
+          <p class="calendar-month">Серпень 2026</p>
+          <div class="calendar-grid" role="grid" aria-label="Календар серпень 2026">
+            <span>Пн</span><span>Вт</span><span>Ср</span><span>Чт</span><span>Пт</span><span>Сб</span><span>Нд</span>
+            <span class="muted"></span><span class="muted"></span><span class="muted"></span><span
+              class="muted"></span><span class="muted"></span><span>1</span><span>2</span>
+            <span>3</span><span>4</span><span>5</span><span>6</span><span>7</span><span>8</span><span>9</span>
+            <span>10</span><span>11</span><span>12</span><span>13</span><span>14</span><span>15</span><span>16</span>
+            <span>17</span><span>18</span><span>19</span><span>20</span><span class="highlight-day">21
+              <small>❤</small></span><span>22</span><span>23</span>
+            <span>24</span><span>25</span><span>26</span><span>27</span><span>28</span><span>29</span><span>30</span>
+            <span>31</span><span class="muted"></span><span class="muted"></span><span class="muted"></span><span
+              class="muted"></span><span class="muted"></span><span class="muted"></span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section message-wide" data-aos="fade-up">
+      <div class="container">
+        <p>
+          МИ НЕ УЯВЛЯЄМО ЦЕЙ РАДІСНИЙ ДЕНЬ<br />
+          БЕЗ ВАС - НАШИХ БЛИЗЬКИХ<br />
+          І ДОРОГИХ ЛЮДЕЙ!
+        </p>
+      </div>
+    </section>
+
+    <section class="section gallery" id="gallery">
+      <div class="container">
+        <h2 data-aos="fade-up">Наші миті</h2>
+
+        <div class="mini-album" data-aos="zoom-in" data-aos-delay="80" tabindex="0" aria-label="Фотоальбом пари">
+          <div class="album-viewport" aria-live="polite">
+            <div class="album-track" id="albumTrack">
+              <figure class="album-slide">
+                <img src="images/4.jpg" alt="Альбомне фото 1" />
+              </figure>
+              <figure class="album-slide">
+                <img src="images/1.jpg" alt="Альбомне фото 2" />
+              </figure>
+              <figure class="album-slide">
+                <img src="images/2.jpg" alt="Альбомне фото 3" />
+              </figure>
+              <figure class="album-slide">
+                <img src="images/3.jpg" alt="Альбомне фото 4" />
+              </figure>
+              <figure class="album-slide">
+                <img src="images/5.jpg" alt="Альбомне фото 5" />
+              </figure>
+              <figure class="album-slide">
+                <img src="images/6.jpg" alt="Альбомне фото 6" />
+              </figure>
+            </div>
+          </div>
+          <div class="album-controls">
+            <button class="album-arrow album-prev" type="button" aria-label="Попереднє фото">‹</button>
+            <div class="album-meta">
+              <div class="album-dots" id="albumDots" aria-label="Індикатори слайдів"></div>
+              <p class="album-counter" id="albumCounter">1 / 6</p>
+            </div>
+            <button class="album-arrow album-next" type="button" aria-label="Наступне фото">›</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section countdown" id="countdown">
+      <div class="container" data-aos="fade-up">
+        <h2>До початку свята залишилось</h2>
+        <div class="timer" role="timer" aria-live="polite">
+          <div class="time-box">
+            <span id="days">00</span>
+            <small>Днів</small>
+          </div>
+          <div class="time-box">
+            <span id="hours">00</span>
+            <small>Годин</small>
+          </div>
+          <div class="time-box">
+            <span id="minutes">00</span>
+            <small>Хвилин</small>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section location" id="location">
+      <div class="container">
+        <h2 data-aos="fade-up">Локація</h2>
+        <div class="location-card" data-aos="fade-up" data-aos-delay="120">
+          <p class="location-place">Ресторан</p>
+          <p class="location-name">Florian</p>
+          <p>Віницьке шосе, м. Хмельницький</p>
+          <p>Початок о 15:00</p>
+          <a class="btn"
+            href="https://www.google.com/maps/search/?api=1&query=Florian+%D0%A5%D0%BC%D0%B5%D0%BB%D1%8C%D0%BD%D0%B8%D1%86%D1%8C%D0%BA%D0%B8%D0%B9"
+            target="_blank" rel="noopener noreferrer">Дивитись на мапі</a>
+        </div>
+
+        <div class="map-wrap" data-aos="zoom-in">
+          <iframe title="Карта локації Florian" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+            src="https://www.google.com/maps?q=Florian%20%D0%A5%D0%BC%D0%B5%D0%BB%D1%8C%D0%BD%D0%B8%D1%86%D1%8C%D0%BA%D0%B8%D0%B9&output=embed">
+          </iframe>
+        </div>
+      </div>
+    </section>
+
+    <section class="section dress-code" id="dresscode">
+      <div class="container" data-aos="fade-up">
+        <h2>ДРЕС-КОД</h2>
+        <p>НАМ БУДЕ ДУЖЕ ПРИЄМНО,<br />
+          ЯКЩО ВИ ПІДТРИМАЄТЕ КОЛІР НАШОГО ВЕСІЛЛЯ ДРЕС КОДОМ:</p>
+        <div class="palette" aria-label="Палітра кольорів дрес-коду">
+          <span style="--color:#f4efe8"></span>
+          <span style="--color:#d8cab8"></span>
+          <span style="--color:#bda78c"></span>
+          <span style="--color:#8b7761"></span>
+          <span style="--color:#57504a"></span>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="section gifts" id="gifts">
+      <div class="container" data-aos="fade-up">
+        <h2>Про подарунки</h2>
+        <p>
+          Дорогі друзі!<br />
+          Ваша присутність - наш головний подарунок.<br />
+          А якщо захочете додати трохи приємностей -<br />
+          будемо раді квітам або напоям для святкового настрою.<br />
+          І, звісно ж, не приховуватимемо: конверти теж знаходять особливе місце в наших серцях.
+        </p>
+      </div>
+    </section>
+
+    <section class="section rsvp" id="rsvp">
+      <div class="container" data-aos="fade-up">
+        <h2>RSVP</h2>
+        <p class="rsvp-note">
+          Підтвердіть, будь ласка, вашу присутність до 1 серпня 2026.
+        </p>
+
+        <!--
+          Google Forms integration:
+          1) Replace GOOGLE_FORM_ID in action URL
+          2) Replace field IDs in name="entry.XXXXXXXXXX"
+        -->
+        <form id="rsvpForm" class="rsvp-form"
+          action="https://docs.google.com/forms/d/e/1FAIpQLSdCBpWHhQg4SXqrP2zsvVbGkxUicsnpVyWSpHe1hC9w_Ae83Q/formResponse"
+          method="POST" target="hidden_iframe" novalidate>
+
+          <label for="attendance">Чи зможете доєднатись?</label>
+          <select id="attendance" name="entry.57352262" required>
+            <option value="" selected disabled>Оберіть варіант</option>
+            <option value="Так, буду">Так, буду</option>
+            <option value="На жаль, не зможу">На жаль, не зможу</option>
+          </select>
+
+          <div class="guests-field" id="guestsField">
+            <label for="guestsCount">Скільки осіб?</label>
+            <input id="guestsCount" name="entry.1007123824" type="number" min="1" max="6" step="1" placeholder="1"
+              required />
+          </div>
+
+          <label for="guestName">Ім'я та прізвище</label>
+          <input id="guestName" name="entry.1960921808" type="text" placeholder="Наприклад: Іван Петренко" required />
+
+          <div class="additional-guests-wrap" id="additionalGuestsWrap">
+            <label>Інші гості (ім'я та прізвище)</label>
+            <div id="additionalGuests" class="additional-guests"></div>
+          </div>
+
+          <button type="submit" class="btn">Надіслати відповідь</button>
+          <p id="formStatus" class="form-status" aria-live="polite"></p>
+        </form>
+
+        <iframe name="hidden_iframe" title="hidden form transport" class="hidden-frame"></iframe>
+      </div>
+    </section>
+
+    <section class="section closing" data-aos="zoom-in">
+      <div class="container">
+        <p>Цей день не буде таким особливим без вас - дуже чекаємо зустрічі.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>Eugen &amp; Anastasia • 21.08.2026</p>
+  </footer>
+
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>
