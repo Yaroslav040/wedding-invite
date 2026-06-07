@@ -11,13 +11,13 @@
   --radius-md: 16px;
   --shadow: 0 22px 60px rgba(35, 24, 14, 0.12);
   --container: min(1080px, 90vw);
-  --hero-image: url("images/1.jpg");
-  --section-bg-1: url("images/backgrounds/1.jpg");
-  --section-bg-2: url("images/backgrounds/2.jpg");
-  --section-bg-3: url("images/backgrounds/3.jpg");
-  --section-bg-4: url("images/backgrounds/4.jpg");
-  --section-bg-5: url("images/backgrounds/5.jpg");
-  --section-bg-6: url("images/backgrounds/6.jpg");
+  --hero-image: url("images/new.JPG");
+  --section-bg-1: url("images/backgrounds/1.jpeg");
+  --section-bg-2: url("images/backgrounds/1.jpeg");
+  --section-bg-3: url("images/backgrounds/1.jpeg");
+  --section-bg-4: url("images/backgrounds/1.jpeg");
+  --section-bg-5: url("images/backgrounds/1.jpeg");
+  --section-bg-6: url("images/backgrounds/1.jpeg");
 }
 
 /* Optional dark theme: add class .theme-dark to body */
@@ -37,15 +37,34 @@ body.theme-dark {
 
 html {
   scroll-behavior: smooth;
+  background: var(--bg);
 }
 
 body {
   margin: 0;
   color: var(--text);
-  background: var(--bg);
+  background: transparent;
   font-family: "Manrope", sans-serif;
   line-height: 1.65;
   letter-spacing: 0.02em;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  background-image: var(--section-bg-1);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+@media (max-width: 768px) {
+  body::before {
+    background-color: var(--bg);
+    background-size: contain;
+  }
 }
 
 img {
@@ -106,75 +125,52 @@ p {
 .gifts,
 .rsvp,
 .closing {
-  background-image:
-    linear-gradient(to bottom, var(--section-overlay-from), var(--section-overlay-to)),
-    var(--section-photo);
-  background-size: cover;
-  background-position: var(--section-bg-pos, center);
-  background-repeat: no-repeat;
+  background: linear-gradient(to bottom, var(--section-overlay-from), var(--section-overlay-to));
 }
 
 .intro {
-  --section-photo: var(--section-bg-1);
   --section-overlay-from: rgba(248, 246, 243, 0.34);
   --section-overlay-to: rgba(248, 246, 243, 0.5);
-  --section-bg-pos: center top;
 }
 
 .calendar-section {
-  --section-photo: var(--section-bg-5);
   --section-overlay-from: rgba(248, 246, 243, 0.3);
   --section-overlay-to: rgba(248, 246, 243, 0.46);
-  --section-bg-pos: center;
 }
 
 .message-wide {
-  --section-photo: var(--section-bg-4);
   --section-overlay-from: rgba(248, 246, 243, 0.28);
   --section-overlay-to: rgba(248, 246, 243, 0.44);
-  --section-bg-pos: center;
 }
 
 .gallery {
-  --section-photo: var(--section-bg-3);
   --section-overlay-from: rgba(248, 246, 243, 0.36);
   --section-overlay-to: rgba(248, 246, 243, 0.54);
-  --section-bg-pos: center;
 }
 
 .countdown {
-  --section-photo: var(--section-bg-2);
   --section-overlay-from: rgba(248, 246, 243, 0.32);
   --section-overlay-to: rgba(248, 246, 243, 0.5);
-  --section-bg-pos: center;
 }
 
 .dress-code {
-  --section-photo: var(--section-bg-5);
   --section-overlay-from: rgba(248, 246, 243, 0.32);
   --section-overlay-to: rgba(248, 246, 243, 0.52);
-  --section-bg-pos: center top;
 }
 
 .gifts {
-  --section-photo: var(--section-bg-1);
   --section-overlay-from: rgba(248, 246, 243, 0.34);
   --section-overlay-to: rgba(248, 246, 243, 0.52);
-  --section-bg-pos: center;
 }
 
 .rsvp {
-  --section-photo: var(--section-bg-6);
   --section-overlay-from: rgba(248, 246, 243, 0.34);
   --section-overlay-to: rgba(248, 246, 243, 0.5);
-  --section-bg-pos: center top;
 }
 
 .closing {
-  --section-photo: var(--section-bg-5);
   --section-overlay-from: rgba(248, 246, 243, 0.3);
   --section-overlay-to: rgba(248, 246, 243, 0.46);
-  --section-bg-pos: center;
 }
 
 body.theme-dark .intro {
