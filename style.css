@@ -252,7 +252,7 @@ body.theme-dark .closing {
   place-items: center;
   background-image: var(--hero-image);
   background-size: cover;
-  background-position: center;
+  background-position: center 32%;
   padding: 40px 22px;
   text-align: center;
 }
@@ -368,7 +368,7 @@ body.theme-dark .closing {
 }
 
 .mini-album {
-  width: min(820px, 100%);
+  width: min(560px, 100%);
   margin: 8px auto 0;
   padding: clamp(10px, 1.8vw, 16px);
   border: 1px solid var(--line);
@@ -390,8 +390,8 @@ body.theme-dark .closing {
   background:
     radial-gradient(circle at 14% 16%, rgba(255, 255, 255, 0.45), transparent 58%),
     #f3ede5;
-  aspect-ratio: 4 / 5;
-  max-height: 620px;
+  aspect-ratio: 2 / 3;
+  max-height: min(72vh, 680px);
 }
 
 .album-track {
@@ -752,7 +752,7 @@ body.theme-dark .location {
 
 @media (min-width: 700px) {
   .album-viewport {
-    aspect-ratio: 16 / 10;
+    aspect-ratio: 2 / 3;
   }
 
   .timer {
