@@ -387,6 +387,7 @@ body.theme-dark .closing {
   overflow: hidden;
   border-radius: 16px;
   border: 1px solid var(--line);
+  height: clamp(320px, 68vh, 720px);
   background:
     radial-gradient(circle at 14% 16%, rgba(255, 255, 255, 0.45), transparent 58%),
     #f3ede5;
@@ -402,6 +403,7 @@ body.theme-dark .closing {
 .album-slide {
   flex: 0 0 100%;
   width: 100%;
+  height: clamp(320px, 68vh, 720px);
   margin: 0;
   padding: 8px;
   display: grid;
@@ -411,9 +413,11 @@ body.theme-dark .closing {
 
 .album-slide img {
   display: block;
-  width: 100%;
+  width: auto;
   height: auto;
   max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
   border-radius: 12px;
   background: transparent;
   box-shadow: 0 10px 26px rgba(28, 20, 13, 0.14);
@@ -931,16 +935,17 @@ body.theme-dark .location {
 
   .album-viewport {
     border-radius: 12px;
+    height: min(64vh, 520px);
   }
 
   .album-slide {
+    height: min(64vh, 520px);
     padding: 6px;
   }
 
   .album-slide img {
-    width: 100%;
-    height: auto;
     max-width: 100%;
+    max-height: 100%;
     border-radius: 10px;
   }
 
